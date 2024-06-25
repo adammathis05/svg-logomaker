@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const { Circle, Square, Triangle } = require("./lib/shapes");
+const SVG = require("./lib/svg");
 
 // TODO: Create an array of questions for user input
 
@@ -10,6 +11,12 @@ inquirer
         type: 'input',
         message: 'Enter up to 3 characters for your logo: ',
         name: 'title',
+        validate: (title) => {
+            if(title.length > 3) {
+                return 'Enter no more than 3 characters'
+            }
+            return true;
+        }
     },
     
     {
@@ -33,11 +40,20 @@ inquirer
 
 
   ])
-//   .then(data => {
-//     fs.writeFile("examples/logo.svg", shapes(data), (err) => {
-//         if (err) console.log(err);
-//         else console.log("Generated logo.svg");
-//     })
+  .then(data => {
+    let shape;
+    if(data.logoShape === "circle") shape = new Circle();
+    else if (data.logoShape === "triangle") shape = new Triangle();
+    else shape = new Square();
+    shape.setColor(data.shapeColor);
+    const svg = new SVG();
+    svg.setText(data.title, data.textColor);
+    svg.setShape(shape);
 
-//   }
-//   )
+    fs.writeFile("examples/logo.svg", svg.render(), (err) => {
+        if (err) console.log(err);
+        else console.log("Generated logo.svg");
+    })
+
+  }
+  )
