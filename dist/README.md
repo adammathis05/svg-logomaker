@@ -13,7 +13,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
 ![Video of Walkthrough](https://drive.google.com/file/d/1AhCJL86rOSDwVhyRNw1h8GBMdwfm1Ajh/view?usp=sharing)
-
+![Screenshot of sample file](https://github.com/adammathis05/svg-logomaker/blob/main/examples/logo.svg)
 
 ## Credits
 - Xpert Learning Assistant
