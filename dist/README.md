@@ -12,7 +12,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-![Video of Walkthrough](https://github.com/adammathis05/task-board/blob/main/assets/Task%20Board%20Screenshot.png)
+![Video of Walkthrough](https://drive.google.com/file/d/1AhCJL86rOSDwVhyRNw1h8GBMdwfm1Ajh/view?usp=sharing)
 
 
 ## Credits
