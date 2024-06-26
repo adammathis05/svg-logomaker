@@ -4,7 +4,7 @@
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- I wanted to
+- I wanted to create an app that takes in user input and uses that input to generate an SVG logo file that can be viewed in the browser. The logo can be either circle, square, or triangle, and user can input no more than 3 characters to sit inside the logo. Once the code is complete, I wanted to write a test that uses Jest to check for errors in the code. I'm feeling more comfortable using Inquirer, but needed assistance putting the shape classes together. 
 
 ## Usage
 
